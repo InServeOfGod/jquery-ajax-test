@@ -9,7 +9,69 @@
     <title>Javascript jquery ajax test</title>
 </head>
 <body>
+    <section class="container-fluid mt-3">
+        <div class="container">
+            <p id="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+            </p>
 
+            <section>
+                List Group
+
+                <ul class="list-group" id="list">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item">
+                        <ul class="list-group">
+                            <li class="list-group-item">And a sixth one</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="card mt-3">
+                <form action="" method="post">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label" for="username">
+                                Enter Username :
+                                <input type="text" name="username" id="username" class="form-control" accept="text/plain" maxlength="32" required>
+                                <small class="text-danger"></small>
+                                <small class="text-success"></small>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <div class="mb-3">
+                            <button class="btn btn-sm btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-3 table-responsive-md">
+                <table class="table table-hover">
+                    <tr>
+                        <th>Id</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>David123</td>
+                        <td>*****</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
